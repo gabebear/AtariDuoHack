@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82ACDE518BEB724007ABA7D /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82ACDE418BEB724007ABA7D /* ExternalAccessory.framework */; };
 		F87AA6D018B592F5005ABC31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AA6CF18B592F5005ABC31 /* Foundation.framework */; };
 		F87AA6D218B592F5005ABC31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AA6D118B592F5005ABC31 /* CoreGraphics.framework */; };
 		F87AA6D418B592F5005ABC31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AA6D318B592F5005ABC31 /* UIKit.framework */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F82ACDE218BEB328007ABA7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F82ACDE318BEB32F007ABA7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F82ACDE418BEB724007ABA7D /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		F87AA6CC18B592F5005ABC31 /* AtariDuoHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtariDuoHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87AA6CF18B592F5005ABC31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F87AA6D118B592F5005ABC31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,8 +48,6 @@
 		F87AA6DD18B592F5005ABC31 /* AtariDuoHack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtariDuoHack-Prefix.pch"; sourceTree = "<group>"; };
 		F87AA6DE18B592F5005ABC31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F87AA6DF18B592F5005ABC31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F87AA6E218B592F5005ABC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F87AA6E518B592F5005ABC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		F87AA6E718B592F5005ABC31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F87AA6E818B592F5005ABC31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F87AA6EA18B592F5005ABC31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82ACDE518BEB724007ABA7D /* ExternalAccessory.framework in Frameworks */,
 				F87AA6F218B592F5005ABC31 /* XCTest.framework in Frameworks */,
 				F87AA6F418B592F5005ABC31 /* UIKit.framework in Frameworks */,
 				F87AA6F318B592F5005ABC31 /* Foundation.framework in Frameworks */,
@@ -100,6 +103,7 @@
 		F87AA6CE18B592F5005ABC31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F82ACDE418BEB724007ABA7D /* ExternalAccessory.framework */,
 				F87AA6CF18B592F5005ABC31 /* Foundation.framework */,
 				F87AA6D118B592F5005ABC31 /* CoreGraphics.framework */,
 				F87AA6D318B592F5005ABC31 /* UIKit.framework */,
@@ -269,7 +273,7 @@
 		F87AA6E118B592F5005ABC31 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F87AA6E218B592F5005ABC31 /* Base */,
+				F82ACDE318BEB32F007ABA7D /* en */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -277,7 +281,7 @@
 		F87AA6E418B592F5005ABC31 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F87AA6E518B592F5005ABC31 /* Base */,
+				F82ACDE218BEB328007ABA7D /* en */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
@@ -365,7 +369,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtariDuoHack/AtariDuoHack-Prefix.pch";
 				INFOPLIST_FILE = "AtariDuoHack/AtariDuoHack-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -379,7 +383,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtariDuoHack/AtariDuoHack-Prefix.pch";
 				INFOPLIST_FILE = "AtariDuoHack/AtariDuoHack-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,6 +392,7 @@
 		F87AA70518B592F5005ABC31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AtariDuoHack.app/AtariDuoHack";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -401,6 +406,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "AtariDuoHackTests/AtariDuoHackTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -410,6 +416,7 @@
 		F87AA70618B592F5005ABC31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AtariDuoHack.app/AtariDuoHack";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -419,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtariDuoHack/AtariDuoHack-Prefix.pch";
 				INFOPLIST_FILE = "AtariDuoHackTests/AtariDuoHackTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
