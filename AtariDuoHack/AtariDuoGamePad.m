@@ -179,21 +179,18 @@ static NSInputStream *inputStream;
 		// The first byte is always 1bit defining whether the data is buttons or direction
 		// The state is always repeated on the next 2 bytes in the lower 4bits
 		//    (that's what I've seen... log it if anything else happens)
-		if ((buf1 == buf2) &&
-		    (((buf0 & 0xFE) | (buf1 & 0xF0) | (buf2 & 0xF0)) == 0)) {
+		if ((buf1 == buf2) && (((buf0 & 0xFE) | (buf2 & 0xF0)) == 0)) {
 			uint8_t newState;
 			if (buf0) {
 				newState = (buf2 << 4) | (currentState & 0x0F);
-			}
-			else {
+			} else {
 				newState = buf2 | (currentState & 0xF0);
 			}
 			
 			currentState = newState;
 			masterHandler(currentState);
 		} else {
-			NSLog(@"weird, hadn't seen this before: %@",
-			      [NSData dataWithBytes:readBuf length:numRead]);
+			NSLog(@"weird, hadn't seen this before: %@", [NSData dataWithBytes:readBuf length:numRead]);
 			break;
 		}
 		index += 3;
