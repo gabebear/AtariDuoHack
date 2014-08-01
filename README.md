@@ -1,7 +1,7 @@
 AtariDuoHack
 ============
 
-I couldn't find anyone who had figured out how Atari Arcade Duo works, so I did.
+I couldn't find anyone who had figured out how the "Atari Arcade for iPad - Duo Powered" by "Duo Games", so I did.
 
 You can get the Atari Duo fairly cheap now that 30pin iPads/iPhones are considered "old". Check out http://www.amazon.com/Atari-Arcade-iPad-Duo-Powered/dp/B0062H2KNK
 
