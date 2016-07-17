@@ -149,6 +149,7 @@ static NSInputStream *inputStream;
 			                       forMode:NSDefaultRunLoopMode];
 			
 			[inputStream open];
+            [session.outputStream open];
 			
 			isGamePadconnected = YES;
 			masterHandler(0);
